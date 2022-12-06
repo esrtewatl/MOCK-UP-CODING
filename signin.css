@@ -28,19 +28,39 @@ body {
   
 }
 .form-signin input[type="email"] {
+  display: block;
   margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  width: 400px;
+border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
   height: 30px;
 }
+.blue-container{
+  position:absolute;
+  background: rgb(71, 44, 179);
+background: linear-gradient(173deg, rgba(72,54,147,1) 35%, rgba(0,200,255,0.29716524767801855) 100%);
+height: 400px;
+display: flex;
+flex-direction: column;
 
+}
+.greeting-text{
+text-align: center;
+
+
+}
 .form-signin input[type="password"] {
+  display:block;
   margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  width: 400px;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 200px;
+
+  width: 350px;
   height: 30px;
+  box-shadow: black 5;
 }
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -49,6 +69,20 @@ body {
   -moz-user-select: none;
   user-select: none;
 }
+
+.btn{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
