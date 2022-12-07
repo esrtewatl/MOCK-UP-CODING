@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  
 }
 
 body {
@@ -10,9 +11,18 @@ body {
   padding-bottom: 40px;
   background-image:url(/dashboardbg.jpeg);
   background-size: cover;
-  background-position:fixed center; 
+  background-position:fixed;
+  background-position-y: -50px; 
+  background-position-x: 100px;;
   justify-content: center;
   align-items: center;
+}
+.logodiv{
+  position: absolute;
+  top: 25px;
+  left:6px;
+  mix-blend-mode: lighten;
+  
 }
 
 .form-signin {
@@ -29,12 +39,21 @@ body {
 }
 .form-signin input[type="email"] {
   display: block;
-  margin-bottom: -1px;
+  margin-bottom: 10px;
 border-radius: 12px;
   margin-left: auto;
   margin-right: auto;
   width: 350px;
   height: 30px;
+  border:none;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow:0 0 5px #666 inset;
+  -moz-box-shadow:0 0 5px #666 inset;
+  box-shadow:0 0 5px #666 inset;
+ 
+  line-height:25px;
 }
 .blue-container{
   position:absolute;
@@ -44,6 +63,7 @@ height: 400px;
 display: flex;
 flex-direction: column;
 
+
 }
 .greeting-text{
 text-align: center;
@@ -52,6 +72,7 @@ text-align: center;
 }
 .form-signin input[type="password"] {
   display:block;
+  margin-top: 20px;
   margin-bottom: 10px;
   border-radius: 12px;
   margin-left: auto;
@@ -60,7 +81,15 @@ text-align: center;
 
   width: 350px;
   height: 30px;
-  box-shadow: black 5;
+  border:none;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow:0 0 5px #666 inset;
+  -moz-box-shadow:0 0 5px #666 inset;
+  box-shadow:0 0 5px #666 inset;
+ 
+  line-height:25px;
 }
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -71,10 +100,24 @@ text-align: center;
 }
 
 .btn{
+
+  display: absolute;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px;
+  background-image: linear-gradient(173deg, rgba(72,54,147,1) 35%, rgba(0,200,255,0.29716524767801855) 100%);
+
+  bottom: 5px;
+ border:none;
+ -webkit-border-radius:5px;
+ -moz-border-radius:5px;
+ border-radius:5px;
+ -webkit-box-shadow:0 0 5px #666 inset;
+ -moz-box-shadow:0 0 5px #666 inset;
+ box-shadow:0 0 5px #666 inset;
+   height: 55px;
+   line-height:25px;
+ 
 }
 
 
