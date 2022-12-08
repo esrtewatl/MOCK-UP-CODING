@@ -57,7 +57,7 @@ main{
   height: 300px;
   flex-direction: row;
   justify-content: space-evenly;
-  gap: 75px;
+  gap: 105px;
 
   
  
@@ -141,6 +141,7 @@ p{
   border-radius: 12px !important;
   opacity: .7;
   flex:1;
+margin-top: 50px;
 
 }
 .block1{

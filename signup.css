@@ -1,0 +1,16 @@
+*{
+
+}
+body{
+  background-image: url(/SPACEX.jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+h1{
+  font-size: 32px;
+}
+.form-container{
+  width: 650px;
+  height:800px;
+
+}

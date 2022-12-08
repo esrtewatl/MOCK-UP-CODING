@@ -155,7 +155,7 @@ text-shadow:3px 2px 3px grey;
     height: 55px;
     line-height:25px;
     margin: 25px;
-    background-image: url(/fblogin.png);
+    
    
   
 }
@@ -170,8 +170,6 @@ text-shadow:3px 2px 3px grey;
     height: 55px;
     line-height:25px;
     margin: 25px;
-    background-image: url(/glogin2.jpeg);
-mix-blend-mode: darken;
 }
 .btn{
 
