@@ -51,6 +51,7 @@ border-radius: 12px;
   width: 350px;
   height: 50px;
   border:none;
+  opacity: .6;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   border-radius:5px;
@@ -94,6 +95,7 @@ text-shadow:3px 2px 3px grey;
   margin-left: auto;
   margin-right: auto;
   bottom: 200px;
+  opacity: .6;
 
 
 
@@ -133,7 +135,7 @@ text-shadow:3px 2px 3px grey;
 }
 .pw{
   margin-left: 100px;
-  color: rgb(107,73,124);
+  color: rgb(209, 198, 78);
   text-shadow:3px 2px 3px grey;
 }
 .remem{
@@ -153,6 +155,8 @@ text-shadow:3px 2px 3px grey;
     height: 55px;
     line-height:25px;
     margin: 25px;
+    background-image: url(/fblogin.png);
+   
   
 }
 .gbtn{
@@ -166,7 +170,8 @@ text-shadow:3px 2px 3px grey;
     height: 55px;
     line-height:25px;
     margin: 25px;
-  
+    background-image: url(/glogin2.jpeg);
+mix-blend-mode: darken;
 }
 .btn{
 

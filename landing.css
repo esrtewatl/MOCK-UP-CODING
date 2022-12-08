@@ -16,7 +16,8 @@ body{
 a{
   color: #E9C076;
   margin-top: 10px;
-  margin-left: 200px;
+  margin-left: 100px;
+  padding: 15px; 
   
  
  
@@ -26,9 +27,39 @@ a{
 .nav-header{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+
+  margin-left: 10px;
  
 
  
+}
+.flex-container{
+  display: flex;
+  width: 1000px;
+  height: 600px;
+  flex-direction: column;
+
+
+  margin: auto;
+}
+.pictures{
+  display: flex;
+  width: 1000px;
+  height: 300px;
+  flex-direction: row;
+  justify-content: space-evenly;
+ gap: 55px;
+  
+ 
+
+
+}
+.lorem{
+  display: flex;
+  width: 1000px;
+  height: 300px;
+  justify-content: space-evenly;
 }
 /*.advertpic{
  
@@ -64,16 +95,10 @@ a{
   left: 0px;
   border-radius: 50%;
 }
-.container{
- 
- height: 100vh;
- width:  100vw; 
- display: flex;
- justify-content: center;
- align-items: center;
 
 
-}
+
+
 
 
 .wrapper{
@@ -86,11 +111,17 @@ a{
   
   
 }
+.block1, .block2, .block3{
+  border-radius: 12px !important;
+  opacity: .3;
+
+}
 .block1{
  
   width: 200px;
   height: 200px;
   border-style: solid;
+background-image:linear-gradient(173deg, rgba(72,54,147,1) 35%, rgba(0,200,255,0.29716524767801855) 100%);
 
 
 }
@@ -98,20 +129,27 @@ a{
   width: 200px;
   height: 200px;
   border-style: solid;
-
+  background-image:linear-gradient(173deg, rgba(72,54,147,1) 35%, rgba(0,200,255,0.29716524767801855) 100%);
 }
 .block3{
   width: 200px;
   height: 200px;
   border-style: solid;
+  background-image:linear-gradient(173deg, rgba(72,54,147,1) 35%, rgba(0,200,255,0.29716524767801855) 100%);
+
 
 }
 
 .hannah{
-  width: 100px;
-  height: 100px;
+  
+  width: 200px;
+  height: 200px;
   background-image: url("/hannah.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position:center;
+  margin-left: 0px;
+
   opacity: 1;
   
   border-radius: 50%;
@@ -119,3 +157,32 @@ a{
 }
 
 
+.diego{
+  width: 200px;
+  height: 200px;
+  background-image: url(/diego.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  margin-left: 0px;
+
+  opacity: 1;
+  
+  border-radius: 50%;
+  box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+.skydive{
+  width: 200px;
+  height: 200px;
+  background-image: url("/skydiverjpg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  margin-left: 0px;
+
+  opacity: 1;
+  
+  border-radius: 50%;
+  box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
+}
