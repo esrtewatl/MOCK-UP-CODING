@@ -6,11 +6,33 @@ body{
   background-position: center;
   background-attachment: fixed;
 }
-h1{
-  font-size: 32px;
+.container{
+ 
 }
+
 .form-container{
+  display: flex;
+
+  flex-direction: column;
   width: 650px;
   height:800px;
+  background-image: radial-gradient(circle, rgba(236,197,122,0.2539390756302521) 0%, rgba(119,83,131,0.47522759103641454) 100%);
+  border-radius: 12px;
+  margin:auto;
+  }
+  h1{
+    font-size: 32px;
+    text-transform: capitalize;
+    text-align: center;
+    
+  
+    color: #775383;  
+    text-shadow:3px 2px 3px #ecc57a;  
+}
+form{
+  display: flex;
+  margin:auto;
+  margin-top: 100px;
+  flex-direction: column;
 
 }
