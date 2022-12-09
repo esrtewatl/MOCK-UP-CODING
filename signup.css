@@ -1,13 +1,20 @@
 *{
 box-sizing:border-box;
+
 }
 body{
   background-image: url(/SPACEX.jpg);
   background-position: center;
   background-attachment: fixed;
+  color: goldenrod;
+  text-shadow:3px 2px 3px grey;
 }
 .container{
  
+}
+a:hover{
+  color: white;
+
 }
 
 .form-container{
@@ -29,6 +36,7 @@ body{
     text-transform: capitalize;
     text-align: center;
     margin: auto;
+    margin-bottom: 50px;
     
   
     color: #33153d;  
@@ -58,5 +66,22 @@ input{
   background-image: radial-gradient(circle, rgba(236,197,122,0.2539390756302521) 0%, rgba(119,83,131,0.47522759103641454) 100%);
   color: #120e06;
   border-color: goldenrod transparent;
-  border-radius: 10px;
+
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow:0 0 5px #666 inset;
+  -moz-box-shadow:0 0 5px #666 inset;
+  box-shadow:0 0 5px #666 inset;
+  
+}
+.create-btn{
+color: whitesmoke;
+background-color:  rgba(13,1,21,0.7133228291316527);
+height: 35px;
+
+}
+.create-btn:hover{
+  background-color:  rgba(60, 13, 92, 0.713);
+
 }
