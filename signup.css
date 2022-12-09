@@ -1,5 +1,5 @@
 *{
-
+box-sizing:border-box;
 }
 body{
   background-image: url(/SPACEX.jpg);
@@ -13,26 +13,50 @@ body{
 .form-container{
   display: flex;
 
-  flex-direction: column;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+
   width: 650px;
   height:800px;
   background-image: radial-gradient(circle, rgba(236,197,122,0.2539390756302521) 0%, rgba(119,83,131,0.47522759103641454) 100%);
   border-radius: 12px;
   margin:auto;
+  margin-top: 200px;
   }
   h1{
     font-size: 32px;
     text-transform: capitalize;
     text-align: center;
+    margin: auto;
     
   
-    color: #775383;  
+    color: #33153d;  
     text-shadow:3px 2px 3px #ecc57a;  
 }
-form{
-  display: flex;
-  margin:auto;
-  margin-top: 100px;
-  flex-direction: column;
+.left-form{
+  margin: 125px;
+}
 
+.extra-form{
+
+}
+.register{
+  
+}
+.login{
+  
+}
+.form-outline{
+  display: flex;
+  flex-direction: column;
+ 
+}
+input{
+  height: 30px;
+  margin: 15px;
+  background-image: radial-gradient(circle, rgba(236,197,122,0.2539390756302521) 0%, rgba(119,83,131,0.47522759103641454) 100%);
+  color: #120e06;
+  border-color: goldenrod transparent;
+  border-radius: 10px;
 }
