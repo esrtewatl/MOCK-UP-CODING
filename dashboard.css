@@ -300,4 +300,50 @@ margin-top: 5px;
     border-radius: 2rem;
     
   }
-  
+  .feed-div{
+    display:flex;
+    width:60rem;
+    height: 15rem;
+    flex-wrap: wrap;
+ 
+    margin-left: 15rem !important;
+    justify-content: space-evenly;
+  }
+  .news{
+    width: 18rem !important;
+    height: 15rem !important;
+    background-color: #575756;
+    border-style: solid;
+
+  }
+  .feed{
+    
+    width: 18rem !important;
+    height: 15rem !important;
+    background-color: #575756;
+    border-style: solid;
+
+  }
+  .events{
+
+    width: 18rem !important;
+    height: 15rem !important;
+    background-color: #575756;
+    border-style: solid;
+  }
+  .feed-div button{
+    display: flex;
+    width: 9rem;
+    justify-content:center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 3rem;
+    margin: auto;
+    background: linear-gradient(300deg, rgba(134,72,246,1) 50%, rgba(72,54,147,1) 100%);
+  }
+  .feed-div p{
+font-size:20px;
+font-family: roboto; sans serif;
+letter-spacing: .3rem;
+
+  }
