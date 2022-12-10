@@ -34,7 +34,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 margin: auto;
 }
 h1{
-margin-top: 5px;
+  s
 }
 .search__container{
   width: 300px;
@@ -164,13 +164,55 @@ margin-top: 5px;
   }
   .notification-icon{
     margin:auto;
-    margin-top: 50px;
+    margin-top: 40px;
 
   }
-  .nav-block{
+  .nav-block1,.nav-block2,.nav-block3,.nav-block4{
+    display:block;
     width: 5rem;
     height: 6rem;
-    background-color: black !important;
+   
     margin-top: 1rem !important;
+    color:aliceblue;
+    font-size: smaller;
+    text-align: center;
 
   }
+  .nav-block5{
+ 
+  
+    width: 5rem;
+    height: 1.5rem;
+   
+    margin-bottom: 2rem !important;
+    color:aliceblue;
+    font-size: smaller;
+    text-align: center;
+
+ 
+
+  }
+
+  .blackgirl{
+    border-radius: 20px;
+  }
+  .friends-icon{
+    mix-blend-mode:color-burn;
+  }
+  .info-div{
+    display:flex;
+    width: 5rem;
+    height: 2rem !important;
+    background-image: radial-gradient(circle, rgba(143,119,157,1) 0%, rgba(233,192,118,1) 100%)!important;
+    border-radius: 10px;
+    color: black;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    
+    
+   
+    
+  }
+  
