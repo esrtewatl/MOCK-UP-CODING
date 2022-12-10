@@ -34,7 +34,8 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 margin: auto;
 }
 h1{
-  s
+  
+margin-top: 5px;
 }
 .search__container{
   width: 300px;
@@ -161,6 +162,7 @@ h1{
     height:33rem; 
     background: linear-gradient(0deg, rgba(59,50,192,1) 0%, rgba(12,12,12,1) 100%);
     border-radius: 3rem;
+    display: inline-flex;
   }
   .notification-icon{
     margin:auto;
@@ -210,9 +212,66 @@ h1{
     font-size: larger;
     justify-content: center;
     align-items: center;
+    }
+   .flex-station{
+    display: flex;
+    align-items: center;
     
+   }
+    .post-section{
+      display: inline-flex;
+      flex-direction: column;
+      width: 42rem !important;
+      height: 28rem !important;
+      background-color: #575756;
+      border-radius: 5rem !important;;
     
+      margin: 7rem;      
+    }
+    .post-btn{
+      display: flex;
+      width: 7rem;
+      height: 2rem;
+      background-color: #afaf41;
+      margin-left: 32rem;
+      margin-top: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    
+
+    }
+    .post-div{
+      margin:auto;
+
+    }
+    .whatonyourmind{
+      display: flex;
+      width: 18rem;
+      height: 3rem !important;
+      background-color: black;
+      color: aliceblue;
+      text-align: center;
+     align-items: center;
+     justify-content: center;
    
+      
+      border-radius: 25px;
+    }
+
+  .post-input{
+    display: inline-flex;
+    width: 25rem;
+    height: 15rem !important;
+
+    border-radius: 2rem;
     
   }
-  
+  input.post-text{
+    width: 25rem;
+    height: 15rem !important;
+    
+    border-radius: 2rem;
+    
+  }
