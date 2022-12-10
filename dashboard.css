@@ -12,6 +12,7 @@ body{
   mix-blend-mode: lighten;
   width: 100px;
   height: 100px;
+  margin-top: -1.5rem;
 }
 header{
   display: flex;
@@ -32,6 +33,7 @@ border-radius: 25px;
 background: radial-gradient(circle, rgba(143,119,157,1) 56%, rgba(233,192,118,1) 100%);
 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 margin: auto;
+margin-top:2rem;
 }
 h1{
   
@@ -138,6 +140,7 @@ margin-top: 5px;
   transition: all 250ms ease-in-out;
   backface-visibility: hidden;
   transform-style: preserve-3d;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
   
 .search__input:placeholder {
@@ -163,6 +166,8 @@ margin-top: 5px;
     background: linear-gradient(0deg, rgba(59,50,192,1) 0%, rgba(12,12,12,1) 100%);
     border-radius: 3rem;
     display: inline-flex;
+    margin-left: .8rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
   .notification-icon{
     margin:auto;
@@ -214,7 +219,7 @@ margin-top: 5px;
   }
   .info-div{
     display:flex;
-    width: 5rem;
+    width: 4.5rem;
     height: 2rem !important;
     background-image: radial-gradient(circle, rgba(143,119,157,1) 0%, rgba(233,192,118,1) 100%)!important;
     border-radius: 10px;
@@ -223,11 +228,15 @@ margin-top: 5px;
     font-size: larger;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
     }
    .flex-station{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    
     
    }
     .post-section{
@@ -240,7 +249,7 @@ margin-top: 5px;
       background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(59,50,192,1) 100%)!important;
       border-radius: 5rem !important;;
     
-      margin: 7rem;      
+      margin-left: 17rem;      
     }
     .post-btn{
       display: flex;
@@ -253,7 +262,9 @@ margin-top: 5px;
       text-align: center;
       align-items: center;
       justify-content: center;
-    color: black !important;;
+    color: black !important;
+    font-size: larger;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
     }
     .post-div{
@@ -269,7 +280,7 @@ margin-top: 5px;
       text-align: center;
      align-items: center;
      justify-content: center;
-   
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
       
       border-radius: 25px;
     }
