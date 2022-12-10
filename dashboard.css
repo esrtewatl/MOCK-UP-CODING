@@ -199,7 +199,18 @@ margin-top: 5px;
     border-radius: 20px;
   }
   .friends-icon{
-    mix-blend-mode:color-burn;
+   mix-blend-mode:soft-light;
+   box-shadow: 1px 1px 2px 1px gold;
+   -moz-box-shadow: 1px 1px 2px 1px gold;
+   -webkit-box-shadow: 1px 1px 2px 1px gold;
+   -khtml-box-shadow: 1px 1px 2px 1px gold;
+  }
+  .camera-icon{
+    mix-blend-mode: soft-light;
+    box-shadow: 1px 1px 2px #ccc;
+    -moz-box-shadow: 1px 1px 2px #ccc;
+    -webkit-box-shadow: 1px 1px 2px #ccc;
+    -khtml-box-shadow: 1px 1px 2px #ccc;
   }
   .info-div{
     display:flex;
@@ -216,14 +227,17 @@ margin-top: 5px;
    .flex-station{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     
    }
     .post-section{
       display: inline-flex;
       flex-direction: column;
+      flex-wrap: wrap;
+      flex-shrink: 1;
       width: 42rem !important;
       height: 28rem !important;
-      background-color: #575756;
+      background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(59,50,192,1) 100%)!important;
       border-radius: 5rem !important;;
     
       margin: 7rem;      
@@ -232,14 +246,14 @@ margin-top: 5px;
       display: flex;
       width: 7rem;
       height: 2rem;
-      background-color: #afaf41;
+      background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(59,50,192,1) 100%)!important;
       margin-left: 32rem;
       margin-top: 1rem;
       border-radius: 10px;
       text-align: center;
       align-items: center;
       justify-content: center;
-    
+    color: black !important;;
 
     }
     .post-div{
@@ -275,3 +289,4 @@ margin-top: 5px;
     border-radius: 2rem;
     
   }
+  
