@@ -3,7 +3,7 @@ box-sizing:border-box;
 
 }
 body{
-  background-image: url(/SPACEX.jpg);
+  background-image: url(./assets/SPACEX.jpg);
   background-position: center;
   background-attachment: fixed;
   color: goldenrod;
