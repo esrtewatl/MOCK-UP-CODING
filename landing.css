@@ -3,7 +3,7 @@
   color: #E9C076;
 }
 body{
-  background-image: url(/landingbg.jpeg);
+  background-image: url(./assets/landingbg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12,23 +12,20 @@ body{
 
   
 }
-.header{
 
-}
 a{
+
   color: #E9C076;
   margin-top: 10px;
   margin-left: 100px;
   padding: 15px; 
-  
- 
- 
-
-
+}
+a:hover{
+  color: white
 }
 
 .nav-header{
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   flex-direction: column;
 
@@ -44,30 +41,16 @@ main{
 }
 .flex-container{
   display: flex;
-  width: 100%;
-  
-  flex-direction: row;
   flex-wrap: wrap;
- margin: auto;
- justify-content: center;
+  width: 100%;
+  justify-content: space-evenly;
+
+
+ 
  align-items: center;
 }
-/* .pictures{
-  display: flex;
-  width: 1000px;
-  height: 300px;
-  flex-direction: row;
-  justify-content: space-evenly;
-  gap: 105px;
 
-} */
-/* .lorem{
-  display: flex;
-  width: 1000px;
-  height: 300px;
-  justify-content: space-evenly;
-  gap: 65px;
-} */
+
 p{
   color: #E9C076;
   text-align: center;
@@ -80,41 +63,30 @@ p{
  color: #E9C076;
 }
 .enter-btn{
+  display:block;
   width: 300px;
   height: 50px;
   background-image: linear-gradient(173deg, rgba(72,54,147,1) 35%, rgba(0,200,255,0.29716524767801855) 100%); 
   cursor: pointer;
+  margin-left: auto;
+  margin-right:auto;
+  transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
 }
-/*.advertpic{
- 
-  width: 100px;
-  height: 75px;
-  background: url("/advert.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-
-  
-  border: 1px solid rgba(233,192,118,1);
+ .enter-btn:hover{ 
+  border-left: solid 5px gold;
+  border-right: solid 5px gold;
 
 }
-/*.adtext{
-  color: white !important;
-  margin-left: 310px;
-  margin-top: 0px;
 
-  right: 20px;
-  opacity: .4;*/
 
 .logo{
   width: 100px;
   height: 100px;
-  background-image: url("SBLOGO.jpeg");
+  background-image: url("./assets/SBLOGO.jpeg");
   background-position: center;
   mix-blend-mode: lighten;
 
-  /*opacity: 0.5;*/
+
 
   top: 37px;
   left: 0px;
@@ -126,16 +98,6 @@ p{
 
 
 
-/* .wrapper{
- display:flex;
-  width: 600px;
-  height: 600px;
-  border-style: solid;
-  border-color: aliceblue;
-
-  
-  
-} */
 .block1, .block2, .block3{
   border-radius: 12px !important;
   opacity: .7;
@@ -148,26 +110,42 @@ p{
 
 }
 .block1{
- 
-  width: 200px;
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+width: 30rem;
+justify-content: center;
+align-items: center;
+  height:30rem;
   border-style: solid;
-
-
+  box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 .block2{
-  width: 200px;
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+width: 30rem;
+justify-content: center;
+align-items: center;
+
+  height:30rem;
   border-style: solid;
- 
+  box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .block3{
-  width: 200px;
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+width: 30rem;
+justify-content: center;
+align-items: center;
+  height:30rem;
   border-style: solid;
- 
-
+  box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.p{
+  display: block;
+width: 20rem;
+height: 20rem;
+margin: 50px;
 
 }
 
@@ -175,15 +153,16 @@ p{
   
   width: 200px;
   height: 200px;
-  background-image: url("/hannah.jpg");
-  background-repeat: no-repeat;
+  background-image: url("./assets/hannah.jpg");
+  
   background-size: cover;
   background-position:center;
   margin-left: 0px;
-  
+  border-radius: 50%;
+  margin-top: 2rem;
  
 
-  opacity: 1;
+  
   
   border-radius: 50%;
   box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
@@ -193,13 +172,13 @@ p{
 .diego{
   width: 200px;
   height: 200px;
-  background-image: url(/diego.jpg);
+  background-image: url(./assets/diego.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
   margin-left: 0px;
 
-  opacity: 1;
+  margin-top: 2rem;
   
   border-radius: 50%;
   box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
@@ -208,13 +187,13 @@ p{
 .skydive{
   width: 200px;
   height: 200px;
-  background-image: url("/skydiverjpg.jpg");
+  background-image: url("./assets/skydiverjpg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
   margin-left: 0px;
 
-  opacity: 1;
+  margin-top: 2rem;
   
   border-radius: 50%;
   box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
@@ -224,6 +203,13 @@ main {
   height: 100vh;
 }
 
+.spaceship{
+  display: flex;
+  margin: auto;
+}
+footer{
+  color:whitesmoke;
+}
 @media screen (max-width: 768px) {
 
   
