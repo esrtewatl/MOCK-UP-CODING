@@ -9,9 +9,19 @@ body{
   color: goldenrod;
   text-shadow:3px 2px 3px grey;
 }
-.container{
- 
+.logo{
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/SBLOGO.jpeg");
+  background-position: center;
+mix-blend-mode:multiply;
+
+
+  top: 37px;
+  left: 0px;
+  border-radius: 50%;
 }
+
 a:hover{
   color: white;
 
@@ -33,7 +43,12 @@ a:hover{
   
   border-radius: 12px;
   margin:auto;
-  margin-top: 200px;
+  margin-top: 100px;
+  }
+  .blackbg{
+    width: 550px;
+    height:700px;
+    background-color: #120e06;
   }
   h1{
     font-size: 32px;

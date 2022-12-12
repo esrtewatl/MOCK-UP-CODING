@@ -210,8 +210,9 @@ main {
 footer{
   color:whitesmoke;
 }
-@media screen (max-width: 768px) {
-
+@media screen and (min-width: 450){
   
-
+  .a{
+   color: blue !important;
+  }
 }
