@@ -55,7 +55,7 @@ p{
   color: #E9C076;
   text-align: center;
   font-size: 14px;
-  opacity: 1;
+
 }
 .enter-txt{
   font-size: 25px;
@@ -145,21 +145,22 @@ align-items: center;
   display: block;
 width: 20rem;
 height: 20rem;
-margin: 50px;
+margin: 5px;
+line-height: 40px;
 
 }
 
 .hannah{
   
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background-image: url("./assets/hannah.jpg");
   
   background-size: cover;
   background-position:center;
   margin-left: 0px;
   border-radius: 50%;
-  margin-top: 2rem;
+  margin-top: 5rem;
  
 
   
@@ -170,30 +171,30 @@ margin: 50px;
 
 
 .diego{
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background-image: url(./assets/diego.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
   margin-left: 0px;
 
-  margin-top: 2rem;
+  margin-top: 5rem;
   
   border-radius: 50%;
   box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
   
 }
 .skydive{
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background-image: url("./assets/skydiverjpg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
   margin-left: 0px;
 
-  margin-top: 2rem;
+  margin-top: 5rem;
   
   border-radius: 50%;
   box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
