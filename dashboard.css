@@ -16,9 +16,9 @@ body{
 }
 header{
   display: flex;
-  flex-direction: wrap;
-  width: 100vw;
+  flex-direction: wrap;  width: 100vw;
   height: 135px;
+  margin: auto;
   //*border: solid 1px black;**//
 }
 
@@ -598,4 +598,7 @@ color: rgba(0, 0, 255, 0.841);
   font-weight: 600;
 
 
+}
+footer{
+  color:whitesmoke;
 }

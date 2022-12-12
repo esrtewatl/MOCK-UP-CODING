@@ -295,7 +295,9 @@ button:hover{
 
 
 
-
+footer{
+  color:whitesmoke;
+}
 
 @media and (max-width:768px)
 {

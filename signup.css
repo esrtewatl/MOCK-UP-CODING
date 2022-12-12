@@ -9,12 +9,13 @@ body{
   color: goldenrod;
   text-shadow:3px 2px 3px grey;
 }
-.logo{
+.logodiv{
   width: 100px;
   height: 100px;
   background-image: url("./assets/SBLOGO.jpeg");
-  background-position: center;
-mix-blend-mode:multiply;
+background-repeat: no-repeat;
+background-size: cover;
+mix-blend-mode: lighten;
 
 
   top: 37px;
@@ -49,6 +50,7 @@ a:hover{
     width: 550px;
     height:700px;
     background-color: #120e06;
+    
   }
   h1{
     font-size: 32px;
@@ -62,7 +64,7 @@ a:hover{
     text-shadow:3px 2px 3px #ecc57a;  
 }
 .left-form{
-  margin: 125px;
+  margin: 50px;
 }
 
 .form-label{
@@ -70,6 +72,7 @@ a:hover{
   background: radial-gradient(circle, rgba(50,7,96,0.700717787114846) 0%, rgba(9,1,3,1) 100%);
   width: fit-content;
   color: white !important;
+  
 }
 
 .form-outline{
