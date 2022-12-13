@@ -5,9 +5,14 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
 
 body{
+  display: block;
+  margin:auto !important;;
   background: radial-gradient(circle, rgba(143,119,157,1) 0%, rgba(233,192,118,1) 100%);
 }
-.logo{
+.logo-div{
+  display: inline-block;
+}
+.logo-pic{
   margin: 0;
   mix-blend-mode: lighten;
   width: 100px;
@@ -15,35 +20,41 @@ body{
   margin-top: -1.5rem;
 }
 header{
-  display: flex;
-  flex-direction: wrap;  width: 100vw;
+display: inline-flex;
+flex-direction: row;
+  width: 100vw;
   height: 135px;
   margin: auto;
-  //*border: solid 1px black;**//
+  
 }
 
 .greeting{
-  display:flex;
+  display: inline-block;
   width: 400px;
   height: 50px;
+margin-left: 50rem;
+
+
 background-color: black;
 color: aliceblue;
-justify-content: center;
+
 
 border-radius: 25px;
 background: radial-gradient(circle, rgba(143,119,157,1) 56%, rgba(233,192,118,1) 100%);
 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-margin: auto;
-margin-top:2rem;
+
+text-align: center;
 }
 h1{
   
 margin-top: 5px;
 }
 .search__container{
+  display: inline-flex;
+  flex-direction: column;
   width: 300px;
-  margin-right: 70px;
-
+margin-left:  92rem;
+margin-top: -5rem;
  
   color: hsl(230, 100%, 95%);
   background:transparent;
@@ -101,13 +112,12 @@ margin-top: 5px;
 
 
 .search__title{
+  display:block;
   font-size: 22px;
         font-weight: 900;
         text-align: center;
         text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
-        
-        margin: 5px;
-  
+   
   font-weight: 300;
   animation: lights 2000ms 750ms linear infinite;
   
@@ -237,7 +247,8 @@ margin-top: 5px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    
+    margin-left: 20rem;
+ 
     
    }
     .post-section{
@@ -478,6 +489,13 @@ flex-direction: column;
 .events a:hover{
   color: white !important;
 }
+.feed-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-direction: wrap;
+  margin-left: 5rem !important;
+  margin-top: 40px;
+}
 
 .feed-btn{
   width:13rem;  
@@ -601,4 +619,36 @@ color: rgba(0, 0, 255, 0.841);
 }
 footer{
   color:whitesmoke;
+}
+@media (max-width: 768px)
+{
+  .feed-wrapper{
+    display: none;
+  }
+}
+@media (max-width: 1770px)
+{
+  .search__container{
+ all: unset !important;
+ display: inline-flex;
+margin:auto !important;
+margin-top: -20px !important;
+margin-left: 31rem !important;
+}
+.search__input{
+width:30rem;
+}
+}
+  .flex-station{
+  margin-left: 10rem;
+  }
+  .greeting{
+    margin-left: 40rem;
+  }
+}
+@media (max-width: 1550px)
+{
+  .feed-div{
+    display: none !important;
+  }
 }
