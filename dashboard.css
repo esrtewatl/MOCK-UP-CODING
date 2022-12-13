@@ -638,7 +638,7 @@ margin-left: 31rem !important;
 .search__input{
 width:30rem;
 }
-}
+
   .flex-station{
   margin-left: 10rem;
   }
@@ -650,5 +650,13 @@ width:30rem;
 {
   .feed-div{
     display: none !important;
+  }
+}
+@media (max-width: 768px)
+{
+  .feed-div{
+    margin-left: 2px!important;
+
+
   }
 }
