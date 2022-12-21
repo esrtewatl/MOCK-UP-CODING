@@ -654,9 +654,130 @@ width:30rem;
 }
 @media (max-width: 768px)
 {
-  .feed-div{
-    margin-left: 2px!important;
+  .navigation-dash{
+    display: flex !important;
+    flex-direction: column;
+    width: 6rem;
+    height: 33rem; 
+   justify-content: center!important;
+   align-items: center!important;
+   margin-left: -10rem;!important;
+  }
+  .post-section{
+    display: inline-flex;
+    flex-direction: column;
+  width: 18rem!important;
+  height: 18rem!important;
+  margin-left: .2rem!important;
+  }
+ .post-btn{
+  margin-left: 2rem!important;
+  width: 4rem;;
+ }
+ .whatonyourmind{
+width: 6rem!important;
+margin-top: -4rem;
 
+ }
+ .post-div input{
+  width: 10rem!important;
+  height: -20rem!important;;
+
+ }
+ .current-events{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column!important;
+  margin-left: -11rem!important;
+ }
+
+  .nav-block5{
+ 
+  
+    width: 5rem;
+    height: 1.5rem;
+   
+    margin-bottom: 2rem !important;
+    color:aliceblue;
+    font-size: smaller;
+    text-align: center;
+
+ 
 
   }
+  .search__container{
+    width: rem !important;;
+    margin-left: 4rem!important;
+  }
+  .search__input{
+    width: 10rem;
+  }
+  .greeting{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem!important;
+    width: 10rem;
+    font-size: 8px;
+   
+  }
+  
+  .flex-station{
+    display: flex!important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    width: 33rem;
+    height:5rem; 
+  }
+.post-div{
+  height: 6rem!important;
+  width: 3rem;
+margin:auto !important;
 }
+footer{
+  margin-top: 150rem;!important;
+}
+
+
+
+
+}
+
+  .nav-block5{
+ 
+  
+    width: 5rem;
+    height: 1.5rem;
+   
+    margin-bottom: 2rem !important;
+    color:aliceblue;
+    font-size: smaller;
+    text-align: center;
+
+ 
+
+  }
+  .search__container{
+    margin-left: 4rem!important;
+  }
+  .greeting{
+    margin-left: 12rem!important;
+  }
+  .flex-station{
+    display: flex!important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    width: 33rem;
+    height:5rem; 
+  }
+  header{
+    position: attachment;
+  }
+
+
+
+
+
+
+
+
