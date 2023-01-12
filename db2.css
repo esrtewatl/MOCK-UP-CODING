@@ -143,6 +143,10 @@ text-align: center;
  
   }
   .flex-station{
+    display: flex;
+    
+    flex-wrap: wrap;
+    width: 100vw;
     display: inline-flex;
     justify-content: space-between;
   }
@@ -155,7 +159,7 @@ text-align: center;
     background: linear-gradient(300deg, rgba(134,72,246,1) 50%, rgba(72,54,147,1) 100%);
     border-radius: 3rem;
     display: inline-flex;
-    margin-left: .8rem;
+    margin-left: 10.8rem;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
   .notification-icon{
@@ -210,12 +214,18 @@ text-align: center;
     -webkit-box-shadow: 1px 1px 2px #ccc;
     -khtml-box-shadow: 1px 1px 2px #ccc;
   }
+  .main{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 55rem !important;
+  }
   .post-section{
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex-shrink: 1;
-    
+
+  margin-left: -23rem;
     width: 80%!important;
     height: 48% !important;
     background: linear-gradient(300deg, rgba(134,72,246,1) 50%, rgba(72,54,147,1) 100%);
@@ -230,7 +240,7 @@ text-align: center;
     width: 7rem;
     height: 2rem;
     background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(59,50,192,1) 100%)!important;
-    margin-left: 2rem;
+    margin-left: 11rem;
     margin-top: 1rem;
     border-radius: 10px;
     text-align: center;
@@ -251,7 +261,7 @@ text-align: center;
  
   .whatonyourmind{
     display: flex;
-    width: 18rem;
+    width: 8rem;
     height: 3rem !important;
     background-color: black;
     color: aliceblue;
@@ -259,7 +269,7 @@ text-align: center;
    align-items: center;
    justify-content: center;
    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    
+    margin-top: -6rem !important;
     border-radius: 25px;
   }
 
@@ -274,12 +284,12 @@ text-align: center;
  }
 input.post-text{
   width: 15rem;
-  height: 5rem !important;
+  height: 7rem !important;
   border-style: solid !important;
   border-color: gold !important;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   margin: auto;
-  margin-left: 3rem;
+  margin-left: 1.5rem;
   border-radius: 2rem;
   
 }
