@@ -22,7 +22,7 @@
     
     <main class="form-signin w-100 m-auto">
      
-      <form>
+ 
         <div class="container">
         <div class="blue-container">
         <h1 class="greeting-text">
@@ -32,7 +32,7 @@
 
   <div><img src="./assets/icons8-astronaut-64.png" class="icon" alt=""></div>
 
-
+  <form id="loginform">
         <div class="form-floating">
           <input
             type="email"
@@ -40,7 +40,7 @@
             id="floatingEmail"
             placeholder="name@example.com"
           />
-          <label for="floatingInput" class="pw">Email address</label>
+          <label for="email" class="pw">Email Address</label>
         </div>
         <div class="form-floating">
           <input
@@ -54,7 +54,8 @@
 
         <div class="checkbox mb-3">
           <label>
-            <input type="checkbox" value="remember-me"  /> <span class="pw"> Remember me</span>
+            <input type="checkbox" value="remember-me"
+            id="remember"  /> <span class="pw"> Remember me</span>
           </label>
         </div>
         <div class="btn-div">
@@ -64,7 +65,7 @@
             <img src="./assets/f_logo_RGB-Blue_58.png" alt="F" class="custom-btn-img">
             <p class="custom-btn-txt">Login with Facebook</p>
           </span>
-          <button class="btn" type="submit">
+          <button class="btn" type="submit" id="submit"> 
         LOGIN
         </button>
       </div>
@@ -73,5 +74,6 @@
     </div>
     </main>
     <footer>Spacebook 2023&#8482; by Erica Stewart</footer>
+    <script src="./login.js"></script>
   </body>
 </html>

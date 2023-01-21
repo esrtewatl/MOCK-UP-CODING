@@ -15,7 +15,7 @@ body {
 }
 header {
   margin:auto;
-  margin-top: 5em;
+  margin-top: 4em;
   border-radius: 25px;
   width: 50%;
   background: radial-gradient(circle, rgba(143,119,157,1) 56%, rgba(233,192,118,1) 100%);
@@ -24,20 +24,26 @@ header {
   padding: 20px;
   text-align: center;
 }
+h1{
+  margin-top: -1rem;
+}
 .nav-block1{
   display:block;
-  margin: auto;
+  margin:auto;
+  
   width: 7rem;
-  height: 6rem;
+  height: 8rem;
  
   margin-top: 1rem !important;
+  margin-bottom: 2em;
   color:aliceblue;
   font-size: smaller;
   text-align: center;
 }
 .blackgirl{
-  width: 50%;
-  height: 50%;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
   border-radius: 50%;
   box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -196,7 +202,7 @@ main {
   margin: auto;
   margin-top: 5rem;
   width: 25%!important;
-  height: 70% !important;
+  height: 75% !important;
   background: linear-gradient(300deg, rgba(134,72,246,1) 50%, rgba(72,54,147,1) 100%);
   border-radius: 5rem !important;;
 }
@@ -428,5 +434,7 @@ footer{
   }
   .feed .post-section{
     width: 100%;
+    margin: auto;
   }
+  
 }
