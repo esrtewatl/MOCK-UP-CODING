@@ -314,7 +314,13 @@ margin-left: auto;
 margin-right: auto;
 }
 
-@media and (max-width:605px)
-{
-  
+@media (max-width: 600px) {
+  .form-signin {
+    width: 90%;
+    max-width: none;
+  }
+  footer{
+    margin-bottom: 0px !important;
+    margin-top: 50% !important;
+  }
 }

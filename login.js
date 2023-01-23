@@ -2,9 +2,9 @@ let loginForm = document.getElementById("loginForm");
 loginForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    let email = document.getElementById("floatingEmail").value;
-    let password = document.getElementById("floatingPassword").value;
-    let remember = document.getElementById("remember").checked;
+    let email = document.getElementById("#email").value;
+    let password = document.getElementById("#password").value;
+    let remember = document.getElementById("#remember").checked;
 
     if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailValue)) {
       // Invalid email
@@ -25,7 +25,7 @@ loginForm.addEventListener("submit", function(event) {
           // Save remember me status in local storage
           localStorage.setItem("remember", rememberValue);
           // Redirect to dashboard
-          window.location.href = "db2.html";
+          window.location.replace()("dashboard.html");
       })
       .catch(error => {
           console.log(error);
