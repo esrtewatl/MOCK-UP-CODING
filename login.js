@@ -1,6 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
-
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -14,25 +13,33 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-let loginForm = document.getElementById("loginForm");
-loginForm.addEventListener("submit", function(event) {
-    event.preventDefault();
+const auth = getAuth(app);
 
+document.getElementById(`submit`).addEventListener(`click`, function(){
+    const loginemail = document.getElementById(`#email`).value;
+    const password = document.getElementById(`#password`).value;
+    signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
+})
     let email = document.getElementById("#email").value;
     let password = document.getElementById("#password").value;
     let remember = document.getElementById("#remember").checked;
 
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailValue)) {
-      // Invalid email
-      alert("Please enter a valid email address");
-      return;
-  }
+   
 
   // Validate password
   if (passwordValue.length < 8) {
       // Password too short
       alert("Password must be at least 8 characters long");
-      return;
+      
   }
 
   // Sign in with email and password
@@ -47,5 +54,5 @@ loginForm.addEventListener("submit", function(event) {
           console.log(error);
           // Handle errors here
       });
-});
+
 

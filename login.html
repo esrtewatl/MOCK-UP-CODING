@@ -7,7 +7,7 @@
    
     <link rel="icon" href="./assets/SBLOGO.jpeg" name="text/icon" />
     <title>Login to Spacebook!</title>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  
     
     
 
@@ -38,17 +38,17 @@
           <input
             type="email"
             class="form-control"
-            id="floatingEmail"
+            id="email"
             placeholder="name@example.com"
           />
           <label for="email" class="pw"
-          id="email">Email Address</label>
+          id="labelemail">Email Address</label>
         </div>
         <div class="form-floating">
           <input
             type="password"
             class="form-control"
-            id="#password"
+            id="password"
             placeholder="Password"
           />
           <label for="floatingPassword" class="pw">Password</label>
@@ -69,10 +69,14 @@
       </div>
       <p class="pw">Don't Have a login? <a href="./Signup.html"> Sign up!</a></p>
       </div>
+      <div id="result-box">
+        <h3>result</h3>
+      </div>
+   x
       </form>
     </div>
     </main>
     <footer>Spacebook 2023&#8482; by Erica Stewart</footer>
-    <script src="./login.js"></script>
+    <script src="./login.js" type="module"></script>
   </body>
 </html>

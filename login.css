@@ -292,6 +292,9 @@ button:hover{
   border-left: solid 5px gold;
   border-right: solid 5px gold;
 }
+#result-box {
+  display:none;
+}
 
 
 
