@@ -1,3 +1,19 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCjqlUnnQsOydcM4XSX7eO2bh08gndDLQA",
+  authDomain: "login-page-spacebook.firebaseapp.com",
+  projectId: "login-page-spacebook",
+  storageBucket: "login-page-spacebook.appspot.com",
+  messagingSenderId: "501666617517",
+  appId: "1:501666617517:web:96ff7879a0291d453dce24"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 let loginForm = document.getElementById("loginForm");
 loginForm.addEventListener("submit", function(event) {
     event.preventDefault();
