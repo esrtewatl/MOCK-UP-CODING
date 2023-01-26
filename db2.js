@@ -15,11 +15,11 @@
     if(react.innerHTML === 'Like'){
         react.innerHTML = 'Liked';
         react.style.color = 'blue';
-        btn.style.backgroundColor = 'lightblue';
+        btn.style.backgroundColor = 'purple';
     }else{
         react.innerHTML = 'Like';
         react.style.color = 'black';
-        btn.style.backgroundColor = 'white';
+        btn.style.backgroundColor = 'goldenrod';
     }
 }
 
@@ -128,16 +128,66 @@ likeBtns.forEach(function(btn) {
 //   }
 
 
-  // create post function
-  function createPost() {
+//   // create post function
+//   function createPost() {
+//     // get post text
+//     var postText = document.querySelector('.post-text').value;
+
+//     // create new post element
+//     var newPost = document.createElement('div');
+//     newPost.classList.add('post-text');
+//     newPost.innerHTML = postText;
+
+//     // create edit button
+//     var editBtn = document.createElement('button');
+//     editBtn.innerHTML = "Edit";
+//     editBtn.classList.add('edit-btn');
+//     editBtn.onclick = function() {
+//       editPost(newPost);
+//     }
+
+//     // create delete button
+//     var deleteBtn = document.createElement('button');
+//     deleteBtn.innerHTML = "Delete";
+//     deleteBtn.classList.add('delete-btn');
+//     deleteBtn.onclick = function() {
+//       deletePost(newPost);
+//     }
+
+//     // append elements to post list
+//     var postList = document.querySelector('.post-list');
+//     postList.appendChild(newPost);
+//     postList.appendChild(editBtn);
+//     postList.appendChild(deleteBtn);
+
+//     // clear post text input
+//     document.querySelector('.post-text').value = "";
+//   }
+
+//   // edit post function
+//   function editPost(post) {
+//     // get new post text
+//     var newPostText = prompt("Enter new post text:");
+
+//     // update post text
+//     post.innerHTML = newPostText;
+//   }
+
+//   // delete post function
+//   function deletePost(post) {
+//     var postList = document.querySelector('.post-list');
+//     postList.removeChild(post);
+//   }
+
+function createPost() {
     // get post text
     var postText = document.querySelector('.post-text').value;
-
+  
     // create new post element
     var newPost = document.createElement('div');
     newPost.classList.add('post-text');
     newPost.innerHTML = postText;
-
+  
     // create edit button
     var editBtn = document.createElement('button');
     editBtn.innerHTML = "Edit";
@@ -145,7 +195,7 @@ likeBtns.forEach(function(btn) {
     editBtn.onclick = function() {
       editPost(newPost);
     }
-
+  
     // create delete button
     var deleteBtn = document.createElement('button');
     deleteBtn.innerHTML = "Delete";
@@ -153,29 +203,27 @@ likeBtns.forEach(function(btn) {
     deleteBtn.onclick = function() {
       deletePost(newPost);
     }
-
-    // append elements to post list
+  
+    //create container for post, editBtn and deleteBtn
+    var postContainer = document.createElement('div');
+    postContainer.appendChild(newPost);
+    postContainer.appendChild(editBtn);
+    postContainer.appendChild(deleteBtn);
+  
+    // append container to post list
     var postList = document.querySelector('.post-list');
-    postList.appendChild(newPost);
-    postList.appendChild(editBtn);
-    postList.appendChild(deleteBtn);
-
+    postList.appendChild(postContainer);
+  
     // clear post text input
     document.querySelector('.post-text').value = "";
   }
-
-  // edit post function
-  function editPost(post) {
+  function deletePost(post) {
+    var postList = document.querySelector('.post-list');
+    postList.removeChild(post.parentNode);
+}
+function editPost(post) {
     // get new post text
     var newPostText = prompt("Enter new post text:");
-
     // update post text
     post.innerHTML = newPostText;
   }
-
-  // delete post function
-  function deletePost(post) {
-    var postList = document.querySelector('.post-list');
-    postList.removeChild(post);
-  }
-

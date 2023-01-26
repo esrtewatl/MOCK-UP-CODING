@@ -323,18 +323,26 @@ margin-bottom: 4px;
 }
 
 .edit-btn, .delete-btn {
+display: block;
+margin: auto ;
+border-radius: 3rem;
+font-weight: bold;
+letter-spacing: 1px;
 
-margin-left: auto;
-margin-right: auto;
-  background-color: blue;
-  color: white;
+background: linear-gradient(300deg, rgba(134,72,246,1) 50%, rgba(72,54,147,1) 100%);
+  
   cursor: pointer;
 
 }
 .edit-btn:hover, .delete-btn:hover {
   background-color: rgb(9, 9, 14);
 }
-
+.delete-btn{
+  color: red;;
+}
+.edit-btn{
+  color: goldenrod;
+}
 
 .feed-div{
  
@@ -371,9 +379,7 @@ margin:auto;
 line-height: 2em;
 
 }
-.status button{
-  background-color: black;
-}
+
 .stat-pic-1{
   width: 50%;
   height: 50%;
@@ -450,7 +456,9 @@ line-height: 2em;
   font-size: larger;
 }
 .react{
-color: rgba(0, 0, 255, 0.841);
+color:black;
+border-radius: 2em;
+background-color: whitesmoke;
   margin: 1px;
   font-weight: 600;
   font-size: smaller;
@@ -472,7 +480,9 @@ footer{
   margin-bottom:-0rem; 
   color: #fff; 
 }
-
+.likeBtn{
+  background-color: goldenrod;
+}
 @media (max-width: 600px) {
   header {
     flex-direction: column;
@@ -493,5 +503,7 @@ footer{
     width: 100%;
     margin: auto;
   }
+  .post-div{
+margin-left: -2.7rem;
   
-}
+ 
