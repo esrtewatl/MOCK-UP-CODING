@@ -33,23 +33,23 @@ createBtn.addEventListener('click', (event) => {
   const dob = dobInput.value;
   const terms = termsCheckbox.checked;
 
-//   if (username === '' || email === '' || password === '' || repeatPassword === '' || dob === '') {
-//     alert('Please fill out all fields');
-//     return;
-//   }
+  if (username === '' || email === '' || password === '' || repeatPassword === '' || dob === '') {
+    alert('Please fill out all fields');
+    return;
+  }
 
-//   if (password !== repeatPassword) {
-//     alert('Passwords do not match');
-//     return;
-//   }
+  if (password !== repeatPassword) {
+    alert('Passwords do not match');
+    return;
+  }
 
-//   if (!terms) {
-//     alert('Please accept the terms of service');
-//     return;
-//   }
+  if (!terms) {
+    alert('Please accept the terms of service');
+    return;
+  }
 
-//   // Send user information to server to create account
-// });
+  // Send user information to server to create account
+});
 
 
 
