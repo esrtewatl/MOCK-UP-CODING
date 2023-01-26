@@ -1,5 +1,3 @@
-
-
 let objPeople = [
     {email:"samR@gmail.com",
     password:"bullet"},
@@ -7,6 +5,11 @@ let objPeople = [
     password:"rockwithus"},
     {email:"estewartATL@gmail.com",password:"password"}    
 ]
+
+
+
+
+
 
 let loginForm = document.getElementById("loginform");
 let email = document.getElementById("email");
@@ -33,7 +36,7 @@ loginForm.addEventListener("submit", function(event) {
     if (isValid) {
         // Email and password are valid
         // Redirect to dashboard
-        window.location.href = "dashboard.html";
+        window.location.href = "db2.html";
     } else {
         // Invalid email or password
         resultBox.innerHTML = "Invalid email or password";
