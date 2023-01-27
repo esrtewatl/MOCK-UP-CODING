@@ -1,0 +1,63 @@
+{
+    "users": {
+      "Blly": {
+        "email": "estewartATL@gmail.com",
+        "password": "password"
+      },
+      "Mark": {
+        "email": "user1@example.com",
+        "password": "password"
+      },
+      "Samantha": {
+        "email": "user2@example.com",
+        "password": "password"
+      },
+      "Erica": {
+        "email": "user3@example.com",
+        "password": "password"
+      },
+      "Thomas": {
+        "email": "user4@example.com",
+        "password": "password"
+      },
+      "Heidi": {
+        "email": "user5@example.com",
+        "password": "password"
+      },
+      "Nandi": {
+        "email": "user6@example.com",
+        "password": "password"
+      }
+    },
+    "post1": {
+      "Name": "Mark",
+      "picture": "assets/1.jpg",
+      "Post": "I wonder how much explosives were used to move that asteroid! Team USA!"
+    },
+    "post2": {
+      "Name": "Samantha",
+      "picture": "assets/2.jpg",
+      "Post": "Good God these Norhern lights are so beautiful! I'll post pics soon!"
+    },
+    "post3": {
+      "Name": "Erica",
+      "picture": "assets/3.jpg",
+      "Post": "I have three tix to go see Dr. NDT speak!"
+    },
+    "post4": {
+      "Name": "Thomas",
+      "picture": "assets/4.jpg",
+      "Post": "So, who is into conspiracy theories and also thinks planet Nibiru will return?"
+    },
+    "post5": {
+      "Name": "Heidi",
+      "picture": "assets/5.jpg",
+      "Post": "The super-Earth exoplanet Janssen is so close to its star..."
+    },
+    "post6": {
+      "Name": "Nandi",
+      "picture": "assets/6.jpg",
+      "Post": "What time does the Artemis 1 Orion spacecraft splash down on Dec. 11?"
+    }
+  }
+  

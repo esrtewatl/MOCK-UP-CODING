@@ -96,13 +96,17 @@ input{
   box-shadow:0 0 5px #666 inset;
   
 }
-.create-btn{
+button{
 color: whitesmoke;
 background-color:  rgba(13,1,21,0.7133228291316527);
 height: 35px;
+margin-top: 5rem;
 
 }
-.create-btn:hover{
+#create-btn:hover{
   background-color:  rgba(60, 13, 92, 0.713);
 
+}
+input{
+  border-color: goldenrod;
 }

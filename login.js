@@ -1,3 +1,8 @@
+
+const USERS_URL = "https://social-media-mock-up-default-rtdb.firebaseio.com/userCredential";
+const EXT = `j.son`;
+
+
 let objPeople = [
     {email:"samR@gmail.com",
     password:"bullet"},
@@ -39,6 +44,6 @@ loginForm.addEventListener("submit", function(event) {
         window.location.href = "db2.html";
     } else {
         // Invalid email or password
-        resultBox.innerHTML = "Invalid email or password";
+       alert("Invalid email or password");
     }
 });
