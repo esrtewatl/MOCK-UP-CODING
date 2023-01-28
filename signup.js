@@ -10,15 +10,21 @@ const name = document.getElementById("userName");
 const dob = document.getElementById("dateInput");
 
 const users= {
-  "email":document.getElementById("emailInput").value,
-  "password":document.getElementById("passwordInput").value,
-  "userName":document.getElementById("userName").value,
-  "dob":document.getElementById("dateInput").value
+  "email":email.value,
+  "password":password.value,
+  "userName":name.value,
+  "dob":dob.value
 };
 
 document.getElementById("create-btn").addEventListener("click", (event) => {
   event.preventDefault();
-
+  const users= {
+    "email":email.value,
+    "password":password.value,
+    "userName":name.value,
+    "dob":dob.value
+  };
+  
 
   fetch(`${USERS_URL}${EXT}`, {
     method: "POST",
@@ -31,7 +37,7 @@ document.getElementById("create-btn").addEventListener("click", (event) => {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
+      console.log(users);
       // Handle successful user creation
     })
     .catch((error) => {
