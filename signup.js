@@ -4,7 +4,7 @@ const EXT = `.json`;
 
 
 
-const email = document.getElementById("emailInput").value;
+const email = document.getElementById("emailInput");
 const password = document.getElementById("passwordInput");
 const name = document.getElementById("userName");
 const dob = document.getElementById("dateInput");
