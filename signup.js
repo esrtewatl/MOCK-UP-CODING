@@ -27,7 +27,7 @@ document.getElementById("create-btn").addEventListener("click", (event) => {
   
 
   fetch(`${USERS_URL}${EXT}`, {
-    method: "POST",
+    method: "PUT",
     body: JSON.stringify(users),
     // headers: {
     //   "Content-Type": "application/json"
@@ -38,6 +38,7 @@ document.getElementById("create-btn").addEventListener("click", (event) => {
     })
     .then((data) => {
       console.log(users);
+      window.location.href = "db2.html";
       // Handle successful user creation
     })
     .catch((error) => {
