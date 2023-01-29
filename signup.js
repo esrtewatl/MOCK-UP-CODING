@@ -25,7 +25,15 @@ document.getElementById("create-btn").addEventListener("click", (event) => {
     "dob":dob.value
   };
   
-
+  const form = document.querySelector("form");
+  const checkbox = document.querySelector("input[type='checkbox']");
+  
+  form.addEventListener("submit", (event) => {
+    if (!checkbox.checked) {
+      event.preventDefault();
+      alert("Please agree to the terms of service before submitting the form.");
+    }
+  });
   fetch(`${USERS_URL}${EXT}`, {
     method: "PUT",
     body: JSON.stringify(users),
@@ -46,3 +54,4 @@ document.getElementById("create-btn").addEventListener("click", (event) => {
       // Handle error
     });
 });
+

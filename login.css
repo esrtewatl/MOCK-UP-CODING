@@ -293,6 +293,7 @@ img{
   height: 8rem;
   width: auto;
   margin: auto;
+  margin-top: 1rem;
 }
 
 button:hover{
