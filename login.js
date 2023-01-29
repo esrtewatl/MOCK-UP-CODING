@@ -46,6 +46,30 @@ const EXT = `.json`;
 //        alert("Invalid email or password");
 //     }
 // });
+// Remember me function in local storage!
+const checkbox = document.getElementById("remember");
+
+checkbox.addEventListener("change", function() {
+  if (checkbox.checked) {
+    // Save the checkbox state using localStorage or a cookie
+  } else {
+    // Remove the saved state
+  }
+});
+
+if (checkbox.checked) {
+  localStorage.setItem("remember", "true");
+} else {
+  localStorage.removeItem("remember");
+}
+
+if (checkbox.checked) {
+  Cookies.set("remember", "true", { expires: 7 });
+} else {
+  Cookies.remove("remember");
+}
+
+
 const loginform = document.getElementById("loginform");
 loginform.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -56,7 +80,7 @@ loginform.addEventListener("submit", (event) => {
   const user = {email, password, remember};
 
   fetch(USERS_URL + EXT, {
-    method: "POST",
+    method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user)
   })
