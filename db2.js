@@ -1,5 +1,3 @@
-
-  
 const USERS_URL = "https://social-media-mock-up-default-rtdb.firebaseio.com/newPost";
 const EXT = `.json`;
 
@@ -29,103 +27,88 @@ likeBtns.forEach(function(btn) {
 
 
 
-function createPost() {
-
-  
-  // get post text
-   postText = document.querySelector('.post-text').value;
-
-  // create new post element
-  let newPost = document.createElement('div');
-  newPost.classList.add('post-text');
-  newPost.innerHTML = postText;
-
-  // create edit button
-  let editBtn = document.createElement('button');
-  editBtn.innerHTML = "Edit";
-  editBtn.classList.add('edit-btn');
-  editBtn.onclick = function() {
-    editPost(newPost);
-  }
-
-  // create delete button
-  let deleteBtn = document.createElement('button');
-  deleteBtn.innerHTML = "Delete";
-  deleteBtn.classList.add('delete-btn');
-  deleteBtn.onclick = function() {
-    deletePost(newPost);
-  }
-
-  //create container for post, editBtn and deleteBtn
-  let postContainer = document.createElement('div');
-  postContainer.appendChild(newPost);
-  postContainer.appendChild(editBtn);
-  postContainer.appendChild(deleteBtn);
-
-  // append container to post list
-  let postList = document.querySelector('.post-list');
-  postList.appendChild(postContainer);
-
-  // clear post text input
-  document.querySelector('.post-text').value = "";
-}
-function deletePost(post) {
-  let postList = document.querySelector('.post-list');
-  postList.removeChild(post.parentNode);
-}
-function editPost(post) {
-  // get new post text
-  var newPostText = prompt("Enter new post text:");
-  // update post text
-  post.innerHTML = newPostText;
-}
-
-
-// function createPost() {
-//     // get post text
-//     var postText = document.querySelector('.post-text').value;
-  
-//     // create new post element
-//     var newPost = document.createElement('div');
-//     newPost.classList.add('post-text');
-//     newPost.innerHTML = postText;
-  
-//     // create edit button
-//     let editBtn = document.createElement('button');
-//     editBtn.innerHTML = "Edit";
-//     editBtn.classList.add('edit-btn');
-//     editBtn.onclick = function() {
-//       editPost(newPost);
-//     }
-  
-//     // create delete button
-//     let deleteBtn = document.createElement('button');
-//     deleteBtn.innerHTML = "Delete";
-//     deleteBtn.classList.add('delete-btn');
-//     deleteBtn.onclick = function() {
-//       deletePost(newPost);
-//     }
-  
-//     //create container for post, editBtn and deleteBtn
-//     let postContainer = document.createElement('div');
-//     postContainer.appendChild(newPost);
-//     postContainer.appendChild(editBtn);
-//     postContainer.appendChild(deleteBtn);
-  
-//     // append container to post list
-//     let postList = document.querySelector('.post-list');
-//     postList.appendChild(postContainer);
-  
-//     // clear post text input
-//     document.querySelector('.post-text').value = "";
-//   }
-//   function deletePost(post) {
-//     let postList = document.querySelector('.post-list');
-//     postList.removeChild(post.parentNode);
-// }
-// function editPost(post) {
-//     // get new post text
-//     var newPostText = prompt("Enter new post text:");
-//     // update post text
-//     post.innerHTML = newPostText;
-//   }
+      function createPost() {
+        // Get post text
+        const postText = document.querySelector('.post-text').value;
+      
+        // Create the new post object
+        const newPost = { text: postText };
+      
+        // Send post object to the database
+        fetch(USERS_URL + EXT, {
+          method: 'POST',
+          body: JSON.stringify(newPost)
+        })
+          .then(response => response.json())
+          .then(data => {
+            console.log('Success:', data);
+      
+            // Create new post element
+            const newPostEl = document.createElement('div');
+            newPostEl.classList.add('post-text');
+            newPostEl.innerHTML = postText;
+      
+            // Create edit button
+            function editPost(postEl) {
+              const newPostText = prompt("Enter new post text:");
+              if (newPostText) {
+                postEl.innerHTML = newPostText;
+      
+                // Update post object in the database
+                fetch(USERS_URL + EXT, {
+                  method: 'PUT',
+                  body: JSON.stringify({ text: newPostText })
+                })
+                  .then(response => response.json())
+                  .then(data => {
+                    console.log('Post updated:', data);
+                  })
+                  .catch(error => console.error('Error:', error));
+              }
+            }
+      
+            const editBtn = document.createElement('button');
+            editBtn.innerHTML = "Edit";
+            editBtn.classList.add('edit-btn');
+            editBtn.addEventListener("click", () => {
+              editPost(newPostEl);
+            });
+      
+            // Implement deletePost function
+            function deletePost(postEl) {
+              if (confirm("Are you sure you want to delete this post?")) {
+                // Delete post object from the database
+                fetch(USERS_URL + EXT, {
+                  method: 'DELETE'
+                })
+                  .then(response => response.json())
+                  .then(data => {
+                    console.log('Post deleted:', data);
+                    postEl.remove();
+                  })
+                  .catch(error => console.error('Error:', error));
+              }
+            }
+      
+            const deleteBtn = document.createElement('button');
+            deleteBtn.innerHTML = "Delete";
+            deleteBtn.classList.add('delete-btn');
+            deleteBtn.addEventListener("click", () => {
+              deletePost(newPostEl);
+            });
+      
+            // Create container for post, editBtn and deleteBtn
+            const postContainer = document.createElement('div');
+            postContainer.appendChild(newPostEl);
+            postContainer.appendChild(editBtn);
+            postContainer.appendChild(deleteBtn);
+      
+            // Append container to post list
+            const postList = document.querySelector('.post-list');
+            postList.appendChild(postContainer);
+      
+            // Clear post text input
+            document.querySelector('.post-text').value = "";
+          })
+          .catch(error => console.error('Error:', error));
+           }
