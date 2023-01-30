@@ -1,4 +1,4 @@
-const USERS_URL = "https://social-media-mock-up-default-rtdb.firebaseio.com/newusers";
+const USERS_URL = "https://social-media-mock-up-default-rtdb.firebaseio.com/users";
 const EXT = `.json`;
 
 
@@ -9,12 +9,7 @@ const password = document.getElementById("passwordInput");
 const name = document.getElementById("userName");
 const dob = document.getElementById("dateInput");
 
-const users= {
-  "email":email.value,
-  "password":password.value,
-  "userName":name.value,
-  "dob":dob.value
-};
+
 
 document.getElementById("create-btn").addEventListener("click", (event) => {
   event.preventDefault();

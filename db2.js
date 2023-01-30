@@ -84,7 +84,7 @@ likeBtns.forEach(function(btn) {
                   .then(response => response.json())
                   .then(data => {
                     console.log('Post deleted:', data);
-                    postEl.remove();
+                    postEl.parentNode.remove();
                   })
                   .catch(error => console.error('Error:', error));
               }
