@@ -80,7 +80,7 @@ loginform.addEventListener("submit", (event) => {
   const user = {email, password, remember};
 
   fetch(USERS_URL + EXT, {
-    method: "PUT",
+    method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user)
   })

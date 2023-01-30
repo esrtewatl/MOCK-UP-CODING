@@ -30,7 +30,7 @@ document.getElementById("create-btn").addEventListener("click", (event) => {
   
  
   fetch(`${USERS_URL}${EXT}`, {
-    method: "PUT",
+    method: "POST",
     body: JSON.stringify(users),
     // headers: {
     //   "Content-Type": "application/json"

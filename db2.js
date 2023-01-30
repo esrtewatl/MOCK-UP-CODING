@@ -30,11 +30,13 @@ likeBtns.forEach(function(btn) {
 
 
 function createPost() {
+
+  
   // get post text
-  var postText = document.querySelector('.post-text').value;
+   postText = document.querySelector('.post-text').value;
 
   // create new post element
-  var newPost = document.createElement('div');
+  let newPost = document.createElement('div');
   newPost.classList.add('post-text');
   newPost.innerHTML = postText;
 
